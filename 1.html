@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WEB1- HTML</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JAVASCRIPT</a></li>
+    </ol>
+    <ul>
+      <li>1.파일 저장 방식</li>
+      <li>2.파일 입출력 함수</li>
+      <li>3.모드</li>
+    </ul>
+
+    <h2>파일 저장 방식</h2>
+    <p>
+    <a href="https://www.w3.org/TR/html51/syntax.html#the-in-column-group-insertion-mode"
+    target="_blank" title="html5 specification">1. 텍스트 파일 : 아스키 코드 값으로 저장되는
+    파일</a>
+    2. 이진 파일 : 사용자가 정의한 데이터 형으로 저장된 파일
+    <strong>공통점: 0과 1로 저장된 <u>이진 데이터</u></strong>
+    차이점: 저장하는 방식과 읽는 방식
+    </p>
+    <p>
+    **파일 입출력 함수(파일 형식과 상관없이 공용으로 사용하는 함수)
+    FILE * fopen(파일이름,모드)
+    fclose(FILE * stream)
+    feof(FILE * stream)
+    fscanf(파일 포인터,"서식 문자", &읽어온 것 담을 변수) 파일 읽을 때
+    fprintf(파일 포인터, "~~~") 파일에 저장할 때
+    <img src="coding.jpg" width="550px">
+    </p>
+
+    <p>
+    **모드
+    <br>
+     1.파일 접근 모드
+    <br>
+     t: 텍스트 파일 모드로 파일 열기(생략가능)
+     b: 이진 파일 모드로 파일 열기
+    <br>
+     2.입출력 모드
+    <br>
+    <br>
+     r:파일 읽기
+    <br>
+     w:파일 쓰기
+       파일이 없으면 새로 생성하거나 있는 경우는 덮어 쓰기
+    <br>
+     a:기존 파일에 내용을 추가, 만약 파일이 없으면 새로 생성
+    <br>
+     r+: 파일이 존재할 때만 읽기와 쓰기
+         기존 파일이 있는 경우 쓰기에서 덮어쓰기 함
+         파일이 없는 경우 새로운 파일 생성 못함
+    <br>
+     w+: r+와 동일하며 파일이 없으면 새로운 파일 생성
+    <br>
+     a+: 파일 읽기,추가
+         파일이 없는 경우 새로운 파일 생성
+    <br>
+     파일 mode 결합 순서: 입출력 모드+ 파일 접근 모드+ '+'
+    </p>
+  </body>
+</html>
